@@ -28,6 +28,12 @@ def input_to_index(user_input)
   user_input.to_i - 1
 end
 
+def move(board, index, current_player = "X" || "O")
+  board[index] = current_player
+end
+
+
+
 
 def won?(board)
   WIN_COMBINATIONS.detect do |win_combo|
