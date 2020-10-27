@@ -96,7 +96,6 @@ end
 def draw?(board)
 
   if full?(board)==true && won?(board)==nil
-=======
   if full?(board)==true && won?(board)==false
 
     true
