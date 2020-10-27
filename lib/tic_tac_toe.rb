@@ -122,7 +122,11 @@ def play(board)
     turn(board)
     play(board)
   end  
-  if won?(board)
  
+  if won?(board)
+    winner = winner(board)
+    puts "Congratulations #[winner}!"
+    end
+ end
 
     
