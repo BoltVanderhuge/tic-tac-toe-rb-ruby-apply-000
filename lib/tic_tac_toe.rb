@@ -105,7 +105,6 @@ end
 def over?(board)
 
   if full?(board)==true || won?(board)!=nil || draw?(board)==true
-=======
   if full?(board)==true || won?(board)!=false || draw?(board)==true
 
     true
