@@ -94,21 +94,21 @@ def full?(board)
 end
 
 def draw?(board)
-<<<<<<< HEAD
+
   if full?(board)==true && won?(board)==nil
 =======
   if full?(board)==true && won?(board)==false
->>>>>>> 04ae688c6d752d913fe25286918e95930b6ebde9
+
     true
 end
 end
 
 def over?(board)
-<<<<<<< HEAD
+
   if full?(board)==true || won?(board)!=nil || draw?(board)==true
 =======
   if full?(board)==true || won?(board)!=false || draw?(board)==true
->>>>>>> 04ae688c6d752d913fe25286918e95930b6ebde9
+
     true
   else
     false
@@ -117,7 +117,6 @@ def over?(board)
 end
 
 def winner(board)
-<<<<<<< HEAD
   if won?(board)!=nil
     board[won?(board).detect {|index| board[index]=="X" || board[index]=="O"}]
   else
@@ -131,4 +130,4 @@ def winner(board)
 end
 
 def play(board)
-  if
+  if over?(board)
