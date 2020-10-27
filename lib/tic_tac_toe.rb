@@ -66,8 +66,6 @@ def turn(board)
   end
 end
 
-
-
 def won?(board)
   WIN_COMBINATIONS.detect do |win_combo|
     if
@@ -94,19 +92,13 @@ def full?(board)
 end
 
 def draw?(board)
-
   if full?(board)==true && won?(board)==nil
-  if full?(board)==true && won?(board)==false
-
     true
 end
 end
 
 def over?(board)
-
   if full?(board)==true || won?(board)!=nil || draw?(board)==true
-  if full?(board)==true || won?(board)!=false || draw?(board)==true
-
     true
   else
     false
@@ -119,13 +111,11 @@ def winner(board)
     board[won?(board).detect {|index| board[index]=="X" || board[index]=="O"}]
   else
     nil
-=======
-  if won?(board)!=false
-    board[won?(board).detect {|index| board[index]=="X" || board[index]=="O"}]
-  else
-    false
   end
 end
+
+
+
 
 def play(board)
   if !over?(board)
