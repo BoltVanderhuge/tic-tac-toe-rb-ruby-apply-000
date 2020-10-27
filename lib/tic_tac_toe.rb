@@ -1,9 +1,4 @@
 
-def position_taken?(board, index)
-  !(board[index].nil? || board[index] == " ")
-end
-
-# Define your WIN_COMBINATIONS constant
 WIN_COMBINATIONS = [
   [0,1,2], # Top row
   [3,4,5],  # Middle row
@@ -30,6 +25,10 @@ end
 
 def move(board, index, current_player = "X" || "O")
   board[index] = current_player
+end
+
+def position_taken?(board, index)
+  !(board[index].nil? || board[index] == " ")
 end
 
 
