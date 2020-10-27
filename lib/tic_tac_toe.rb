@@ -129,3 +129,6 @@ def winner(board)
     false
   end
 end
+
+def play(board)
+  if
